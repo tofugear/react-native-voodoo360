@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+
+include ':app'
+include ':react-native-voodoo360'
+project(':react-native-voodoo360').projectDir = file('../node_modules/react-native-voodoo360/android')

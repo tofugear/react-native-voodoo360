@@ -1,0 +1,7 @@
+.idea
+gradlew*
+android/gradle
+npm-debug.log
+.DS_Store
+*.iml
+node_modules

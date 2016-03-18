@@ -1,0 +1,11 @@
+{
+  "name": "react-native-voodoo360",
+  "version": "0.0.1",
+  "description": "A 360 photo viewer for react native android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tofugear <npm@tofugear.com> (http://tofugear.com)",
+  "license": "MIT"
+}
