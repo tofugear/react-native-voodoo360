@@ -7,14 +7,16 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.animation.GlideAnimation;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.target.Target;
+// import com.bumptech.glide.Glide;
+// import com.bumptech.glide.load.engine.DiskCacheStrategy;
+// import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+// import com.bumptech.glide.request.animation.GlideAnimation;
+// import com.bumptech.glide.request.RequestListener;
+// import com.bumptech.glide.request.target.SimpleTarget;
+// import com.bumptech.glide.request.target.Target;
 
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.SimpleViewManager;
@@ -23,8 +25,12 @@ import com.facebook.react.uimanager.ThemedReactContext;
 
 import javax.annotation.Nullable;
 
+import java.io.File;
+
 import uk.co.senab.photoview.PhotoView;
 import uk.co.senab.photoview.PhotoViewAttacher;
+
+import com.squareup.picasso.Picasso;
 
 public class ViewManager extends SimpleViewManager<View> {
     public static final String REACT_CLASS = "RCTVoodoo360";
@@ -32,6 +38,8 @@ public class ViewManager extends SimpleViewManager<View> {
     private PhotoView photoView;
     private ReadableArray imageURIs;
     private View myView;
+    private int index = 0;
+    private float moveX = 0.0f; 
     // private SparseArray<Bitmap> resources = new SparseArray<Bitmap>();
     // private EventDispatcher mEventDispatcher;
     // private ResourceDrawableIdHelper mResourceDrawableIdHelper;
@@ -49,35 +57,89 @@ public class ViewManager extends SimpleViewManager<View> {
         return REACT_CLASS;
     }
 
-
     @Override
     public PhotoView createViewInstance(ThemedReactContext reactContext) {
-        myView = new View(reactContext);
         photoView = new PhotoView(reactContext);
-        // mEventDispatcher = reactContext.getNativeModule(UIManagerModule.class).getEventDispatcher();
-        // return photoView;
-        return myView;
+        photoView.setOnTouchListener(new OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event){
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                      break;
+                    case MotionEvent.ACTION_MOVE:
+                      int retval = Float.compare(moveX, event.getX());
+                      int newIndex= index;
+                      if (retval > 0){
+                        newIndex -= 1;
+                      } else if (retval < 0){
+                        newIndex += 1;
+                      } else {
+                        return true;
+                      }
+
+                      moveX = event.getX();
+
+                      if (newIndex >= imageURIs.size()){
+                        newIndex = 0;
+                      }
+
+                      if (newIndex <= -1){
+                        newIndex = imageURIs.size() - 1;
+                      }
+
+                      setIndex(newIndex);
+                      break;
+                    case MotionEvent.ACTION_UP:
+                      
+                      break;
+                    case MotionEvent.ACTION_CANCEL:
+                        
+                      break;
+                    default:
+                      break;
+                }
+
+                return true;
+            }
+        });
+        return photoView;
+    }
+
+    public void setIndex(int newIndex){
+        index = newIndex;
+        String targetImageURI = imageURIs.getString(newIndex);
+        if (targetImageURI.toLowerCase().startsWith("http")){
+            Picasso.with(photoView.getContext()).load(targetImageURI).into(photoView); 
+        } else {
+            File imgFile = new File(targetImageURI);
+            if(imgFile.exists()){
+                Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+                photoView.setImageBitmap(myBitmap);
+            }
+        }
     }
 
     // In JS this is Image.props.source.uri
     @ReactProp(name = "sources")
     public void setSource(PhotoView view, @Nullable ReadableArray sources) {
         imageURIs = sources;
-        for(int i = 0; i < sources.size(); i++) {
-            Log.i("Voodoo360Log", sources.getString(i));
 
+        setIndex(0);
+        // for(int i = 0; i < sources.size(); i++) {
+            // Log.i("Voodoo360Log", sources.getString(i));
 
-            Glide.with(view.getContext())
-                .load(sources.getString(i))
-                // .into(new SimpleTarget<GlideDrawable>() {
-                //     @Override
-                //     public void onResourceReady(GlideDrawable drawable, String model) {
-                //         // Log.d("Voodoo360Log", drawable.getCurrent());
-                //         // photoView.setImageResource(model);
-                //     }
-                // })
-                .into(view)
-            ;
+            // Picasso.with(view.getContext()).load(sources.getString(i)).into(view); 
+            // Glide.with(view.getContext())
+            //     .load(sources.getString(i))
+            //     // .into(new SimpleTarget<GlideDrawable>() {
+            //     //     @Override
+            //     //     public void onResourceReady(GlideDrawable drawable, String model) {
+            //     //         // Log.d("Voodoo360Log", drawable.getCurrent());
+            //     //         // photoView.setImageResource(model);
+            //     //     }
+            //     // })
+            //     .into(view)
+            // ;
 
             // Glide
             //     .with(view.getContext())
@@ -123,7 +185,7 @@ public class ViewManager extends SimpleViewManager<View> {
             //         }
             //     })
             // ;
-        }
+        // }
 
         // view.setImageResource()
 
