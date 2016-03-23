@@ -108,6 +108,10 @@ public class ViewManager extends SimpleViewManager<View> {
     public void setIndex(int newIndex){
         index = newIndex;
         String targetImageURI = imageURIs.getString(newIndex);
+        if (targetImageURI == null){
+            return ;
+        }
+
         if (targetImageURI.toLowerCase().startsWith("http")){
             Picasso.with(photoView.getContext()).load(targetImageURI).into(photoView); 
         } else {
