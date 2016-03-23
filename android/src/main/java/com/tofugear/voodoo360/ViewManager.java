@@ -110,9 +110,6 @@ public class ViewManager extends SimpleViewManager<View> {
     }
 
     public void setIndex(int newIndex){
-        Log.d("imageURIs.size()", "imageURIs.size1 =" + newIndex);
-        Log.d("imageURIs.size()", "imageURIs.size1 -" + imageURIs.size());
-        Log.d("imageURIs.size()", "imageURIs.size1 -=" + imageURIs);
         if (imageURIs == null || newIndex >= imageURIs.size()){
             return ;
         }
