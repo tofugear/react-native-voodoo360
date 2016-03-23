@@ -84,7 +84,11 @@ public class ViewManager extends SimpleViewManager<View> {
                       }
 
                       if (newIndex <= -1){
-                        newIndex = imageURIs.size() - 1;
+                        if (imageURIs.size() == 0){
+                            newIndex = 0;
+                        } else {
+                            newIndex = imageURIs.size() - 1;
+                        }
                       }
 
                       setIndex(newIndex);
@@ -106,12 +110,15 @@ public class ViewManager extends SimpleViewManager<View> {
     }
 
     public void setIndex(int newIndex){
-        index = newIndex;
-        String targetImageURI = imageURIs.getString(newIndex);
-        if (targetImageURI == null){
+        Log.d("imageURIs.size()", "imageURIs.size1 =" + newIndex);
+        Log.d("imageURIs.size()", "imageURIs.size1 -" + imageURIs.size());
+        Log.d("imageURIs.size()", "imageURIs.size1 -=" + imageURIs);
+        if (imageURIs == null || newIndex >= imageURIs.size()){
             return ;
         }
+        index = newIndex;
 
+        String targetImageURI = imageURIs.getString(newIndex);
         if (targetImageURI.toLowerCase().startsWith("http")){
             Picasso.with(photoView.getContext()).load(targetImageURI).into(photoView); 
         } else {
