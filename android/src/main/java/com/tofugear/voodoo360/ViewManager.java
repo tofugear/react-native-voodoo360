@@ -18,10 +18,14 @@ import android.graphics.BitmapFactory;
 // import com.bumptech.glide.request.target.SimpleTarget;
 // import com.bumptech.glide.request.target.Target;
 
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 import javax.annotation.Nullable;
 
@@ -70,9 +74,9 @@ public class ViewManager extends SimpleViewManager<View> {
                       int retval = Float.compare(moveX, event.getX());
                       int newIndex= index;
                       if (retval > 0){
-                        newIndex -= 1;
-                      } else if (retval < 0){
                         newIndex += 1;
+                      } else if (retval < 0){
+                        newIndex -= 1;
                       } else {
                         return true;
                       }
@@ -109,11 +113,25 @@ public class ViewManager extends SimpleViewManager<View> {
         return photoView;
     }
 
+    public void onIndexChangeEvent(){
+        WritableMap event = Arguments.createMap();
+        event.putString("event", "indexChange");
+        event.putInt("index", index);
+        ReactContext reactContext = (ReactContext) photoView.getContext();
+        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
+          photoView.getId(),
+          "topChange",
+          event
+        );
+    }
+
     public void setIndex(int newIndex){
         if (imageURIs == null || newIndex >= imageURIs.size()){
             return ;
         }
         index = newIndex;
+
+        onIndexChangeEvent();
 
         String targetImageURI = imageURIs.getString(newIndex);
         if (targetImageURI.toLowerCase().startsWith("http")){

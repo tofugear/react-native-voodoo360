@@ -15,13 +15,27 @@ export default class Voodoo360 extends Component {
 
   constructor(props) {
     super(props);
+    this._onChange = this._onChange.bind(this);
+    this.state = {
+      index: 0
+    }
+  }
+
+  _onChange(event){
+    if (event && event.nativeEvent && event.nativeEvent.event == "indexChange"){
+      let index = event.nativeEvent.index
+      this.setState({index: index})
+      if (this.props.onIndexChange){
+        this.props.onIndexChange(index)
+      }
+    }
   }
 
   setNativeProps(nativeProps) {
   }
 
   render() {
-    return <RCTVoodoo360 {...this.props} />;
+    return <RCTVoodoo360 {...this.props} onChange={this._onChange}/>;
   }
 }
 
