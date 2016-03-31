@@ -1,42 +1,7 @@
+let Voodoo360 = require('./ReactNativeVoodoo360')
+let Voodoo360fs = require('./ReactNativeVoodoo360fsContainer')
 
-import React,{
-  requireNativeComponent,
-  Component,
-  PropTypes,
-  View
-} from 'react-native';
-
-export default class Voodoo360 extends Component {
-  static propTypes = {
-    ...View.propTypes,
-    sources: PropTypes.arrayOf(PropTypes.string),
-    // source: PropTypes.string,
-  };
-
-  constructor(props) {
-    super(props);
-    this._onChange = this._onChange.bind(this);
-    this.state = {
-      index: 0
-    }
-  }
-
-  _onChange(event){
-    if (event && event.nativeEvent && event.nativeEvent.event == "indexChange"){
-      let index = event.nativeEvent.index
-      this.setState({index: index})
-      if (this.props.onIndexChange){
-        this.props.onIndexChange(index)
-      }
-    }
-  }
-
-  setNativeProps(nativeProps) {
-  }
-
-  render() {
-    return <RCTVoodoo360 {...this.props} onChange={this._onChange}/>;
-  }
+module.exports = {
+  Voodoo360: Voodoo360,
+  Voodoo360fs: Voodoo360fs
 }
-
-const RCTVoodoo360 = requireNativeComponent('RCTVoodoo360', Voodoo360);

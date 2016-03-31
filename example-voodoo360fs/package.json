@@ -1,0 +1,13 @@
+{
+  "name": "voodoo360fs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-native": "^0.22.2",
+    "react-native-voodoo360-fs": "file:../"
+  }
+}
