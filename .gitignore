@@ -5,3 +5,5 @@ npm-debug.log
 .DS_Store
 *.iml
 node_modules
+example-voodoo360fs/android/build
+example-voodoo360fs/android/app/build
