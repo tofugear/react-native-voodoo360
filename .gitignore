@@ -7,3 +7,4 @@ npm-debug.log
 node_modules
 example-voodoo360fs/android/build
 example-voodoo360fs/android/app/build
+example-voodoo360fs/android/.gradle
