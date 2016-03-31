@@ -11,4 +11,4 @@
           android:duration="@android:integer/config_shortAnimTime"
           />
 </set>
-<!-- From: file:/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/res/anim/catalyst_push_up_in.xml -->
+<!-- From: file:/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/res/anim/catalyst_push_up_in.xml -->

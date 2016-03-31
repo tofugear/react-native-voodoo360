@@ -11,7 +11,7 @@ let {
   TouchableOpacity
 } = React
 
-import RCTVoodoo360 from 'react-native-voodoo360'
+import Voodoo360 from './ReactNativeVoodoo360'
 
 let ReactNativeVoodoo360fsView = React.createClass({
   render() {
@@ -47,7 +47,7 @@ let ReactNativeVoodoo360fsView = React.createClass({
     }
     return (
       <View style={this.props.style}>
-        <RCTVoodoo360
+        <Voodoo360
           sources={this.props.images}
           style={styles.voodoo360}
           onIndexChange={this.props.onVoodoo360IndexChange}
