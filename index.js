@@ -1,4 +1,4 @@
-let Voodoo360 = require('./ReactNativeVoodoo360')
+import Voodoo360 from './ReactNativeVoodoo360'
 let Voodoo360fs = require('./ReactNativeVoodoo360fsContainer')
 
 module.exports = {
