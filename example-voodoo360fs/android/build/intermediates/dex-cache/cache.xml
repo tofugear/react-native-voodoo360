@@ -2,32 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-46de4e4b35e18d3e207aad54130486412575194f.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.makeramen/roundedimageview/2.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="814fc0c3ec69a944add398217d90077301501a74">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-0c74dafa0b606b9bed84d4a5d47f5ce675b6dc3e.jar" />
-    </item>
-    <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/commons-cli-1.2-c96823c7a3441ce0cde165c1b3b438f5a07350f1.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-c16d1ed16f881f72857795a55d25b9bad7f9e0c3.jar" />
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/okio-1.6.0-89d0a6bafe4d091a6f7ebb777585135d2b3f5561.jar" />
     </item>
     <item
         jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.8.1/jars/classes.jar"
@@ -37,109 +16,11 @@
         <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-9f409066c90eb56508cb9c88f0e518fd70d3d318.jar" />
     </item>
     <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/jars/libs/infer-annotations-1.5.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0cc39db3c06f47dee223c382f78e2bff90b74274">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-a73dba104d8e7d71087b0dde85beae0d27af061e.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="845a5b3a624946b2068963ba656c117fc453701c">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-fc512e815b022bade90935e5f804b3c46f035e3b.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.commit451/PhotoView/1.2.4/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-f14e95b0a39265869b7e632935ffbbaa9edf5219.jar" />
-    </item>
-    <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-130e9ce9bf9b43a2fe2c115c245081719b19af46.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.8.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0d5d69b03cb7d68b81543f6483ed04ccb0e2235b">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-ebddf657e53d30d2f4f3b99d52036d4d90c97b8c.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-a897043fc8c0456835c8dac64c96ce622e3bb6a9.jar" />
-    </item>
-    <item
-        jar="/usr/local/Cellar/android-sdk/24.1.2/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-e60e8c2940cad75d09a07e2f5b0196534a27b762.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/voodoo360fs/react-native-voodoo360/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="137662c08e64009ec59239f968468fca97cd2100">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-8cc250d16d9d923376fd8a1e38f97ffcceb71d45.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-2ebd672fe9f8944de8960f382223ef7dad176033.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-25568243df0d3dde552653bad85bec9f60302883.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/voodoo360fs/react-native-fs/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="49b28814da9847d27a385536ad178cb7c9049d5d">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-f6ed335bbd3b0a16633312dc66cfef8cd5a6774b.jar" />
-    </item>
-    <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-c66d15407506651c0a6c8d3dd24d7d607c277f63.jar" />
-    </item>
-    <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0-247bf64fc2dec18049ed1c4c2474c5e3d7678168.jar" />
-    </item>
-    <item
         jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
         <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-af49a49b4a3a1e597bc3b294551f67db746339b9.jar" />
-    </item>
-    <item
-        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5b2f15bec1db9a9fddabbc29cf0172333040d7d7">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-46bc409790342058b3f73acf6e0d03d6f4ce955d.jar" />
     </item>
     <item
         jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
@@ -156,18 +37,214 @@
         <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-90cc873873225aa870d055c1e916a63b784f9b43.jar" />
     </item>
     <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/jars/libs/infer-annotations-1.5.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/okio-1.6.0-89d0a6bafe4d091a6f7ebb777585135d2b3f5561.jar" />
+        sha1="0cc39db3c06f47dee223c382f78e2bff90b74274">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-a73dba104d8e7d71087b0dde85beae0d27af061e.jar" />
     </item>
     <item
-        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp/1.2.0/6c5c9380e245c4ff5be2b2a49dcbb0200c39798e/stetho-okhttp-1.2.0.jar"
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="6c5c9380e245c4ff5be2b2a49dcbb0200c39798e">
-        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/stetho-okhttp-1.2.0-fe961bc24d25d04209eb11bad2ef47b9e7f30a41.jar" />
+        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-19c68c86a01b3e32edb04564995bfcdf43abba1d.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.makeramen/roundedimageview/2.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="814fc0c3ec69a944add398217d90077301501a74">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-0c74dafa0b606b9bed84d4a5d47f5ce675b6dc3e.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-25568243df0d3dde552653bad85bec9f60302883.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-4adb764ce0d8c779f06bb042df9c2e534a1b208b.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5b2f15bec1db9a9fddabbc29cf0172333040d7d7">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-46bc409790342058b3f73acf6e0d03d6f4ce955d.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-84ba2769b7e39e0e826472f1fcc850b24291bdb9.jar" />
+    </item>
+    <item
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-46de4e4b35e18d3e207aad54130486412575194f.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-c16d1ed16f881f72857795a55d25b9bad7f9e0c3.jar" />
+    </item>
+    <item
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/commons-cli-1.2-c96823c7a3441ce0cde165c1b3b438f5a07350f1.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/voodoo360fs/react-native-fs/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="49b28814da9847d27a385536ad178cb7c9049d5d">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-f6ed335bbd3b0a16633312dc66cfef8cd5a6774b.jar" />
+    </item>
+    <item
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0-247bf64fc2dec18049ed1c4c2474c5e3d7678168.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-a897043fc8c0456835c8dac64c96ce622e3bb6a9.jar" />
+    </item>
+    <item
+        jar="/usr/local/Cellar/android-sdk/24.1.2/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-e60e8c2940cad75d09a07e2f5b0196534a27b762.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-7e4d1ae4238745badfdc9154c51a9a93c28e9d69.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5b2f15bec1db9a9fddabbc29cf0172333040d7d7">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-90f97bb0aa6bcb82c68f269b778b7eed6167cc95.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.commit451/PhotoView/1.2.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-624b6798342a16abb0a18a8d50b66300e108e419.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0d5d69b03cb7d68b81543f6483ed04ccb0e2235b">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-ebddf657e53d30d2f4f3b99d52036d4d90c97b8c.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-2ebd672fe9f8944de8960f382223ef7dad176033.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/voodoo360fs/react-native-voodoo360/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19410f7878f2bbfebd30147c4abdcc7d1ead1c74">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-c1e266b53a462a83289917346e45b70bdc198cb4.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.commit451/PhotoView/1.2.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-f14e95b0a39265869b7e632935ffbbaa9edf5219.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0d5d69b03cb7d68b81543f6483ed04ccb0e2235b">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-bea0b341046fd5c2aa498b9095cc3362152a3847.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="845a5b3a624946b2068963ba656c117fc453701c">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-fc512e815b022bade90935e5f804b3c46f035e3b.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.makeramen/roundedimageview/2.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="814fc0c3ec69a944add398217d90077301501a74">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-07779bcbe8c8315644ac86e99cdc50fc54e09152.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.22.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0cc39db3c06f47dee223c382f78e2bff90b74274">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-a70a0901ace922296e46aa46a9e644453847cc9f.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-d9d87317683c4635eea778bd2ef7114a1e7e2f70.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="845a5b3a624946b2068963ba656c117fc453701c">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-7d654d4a33dc41f5166fce4386d95f64684a8d9c.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/voodoo360fs/react-native-fs/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="388a9d75c06cf7dba3a0803ae8243fc29c244de5">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-d30da735cb9e936bd3059aa5d64b7db091d6c603.jar" />
+    </item>
+    <item
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-130e9ce9bf9b43a2fe2c115c245081719b19af46.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/exploded-aar/voodoo360fs/react-native-voodoo360/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="137662c08e64009ec59239f968468fca97cd2100">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/classes-8cc250d16d9d923376fd8a1e38f97ffcceb71d45.jar" />
     </item>
     <item
         jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho/1.2.0/1d6cdb8ce8185b8b23213fad48a83987fb6d2d67/stetho-1.2.0.jar"
@@ -184,11 +261,39 @@
         <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-63405dc318201e91d84308e076063635afb5999e.jar" />
     </item>
     <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9178570a3a28c95fabd3bc746cd68efe99ad2b47">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/classes-8890d3cbe0fb3c80ea72f29692aa3081a533b92a.jar" />
+    </item>
+    <item
+        jar="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/roku/Documents/nativereact/react-native-voodoo360/example-voodoo360fs/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-ee23887d4cd3c5b07ebf639ceb7031194f1a8ce6.jar" />
+    </item>
+    <item
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-c66d15407506651c0a6c8d3dd24d7d607c277f63.jar" />
+    </item>
+    <item
         jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-ws/2.5.0/e9753b7dcae5deca92e871c5c759067070b07bc/okhttp-ws-2.5.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="0e9753b7dcae5deca92e871c5c759067070b07bc">
         <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-2.5.0-d325745d38ab278c616c722302173ea572ca0154.jar" />
+    </item>
+    <item
+        jar="/Users/roku/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp/1.2.0/6c5c9380e245c4ff5be2b2a49dcbb0200c39798e/stetho-okhttp-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6c5c9380e245c4ff5be2b2a49dcbb0200c39798e">
+        <dex dex="/Users/roku/Documents/nativereact/voodoo360fs/example/android/app/build/intermediates/pre-dexed/debug/stetho-okhttp-1.2.0-fe961bc24d25d04209eb11bad2ef47b9e7f30a41.jar" />
     </item>
 
 </items>

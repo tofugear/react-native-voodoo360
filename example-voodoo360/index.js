@@ -85,8 +85,7 @@ const IMGS = [
 ];
 const {height, width} = Dimensions.get('window');
 
-let Voodoo360Component = require('react-native-voodoo360');
-let {Voodoo360} = Voodoo360Component;
+let { Voodoo360 } = require('react-native-voodoo360');
 
 class Main extends Component {
   render() {
