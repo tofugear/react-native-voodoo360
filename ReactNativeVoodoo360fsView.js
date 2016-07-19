@@ -1,15 +1,14 @@
 'use strict'
-let React = require('react-native')
-let {
+import React from 'react';
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   View,
   Dimensions,
   ProgressBarAndroid,
   TouchableOpacity
-} = React
+} from 'react-native';
 
 import Voodoo360 from './ReactNativeVoodoo360'
 

@@ -1,6 +1,6 @@
 'use strict';
 
-let React = require('react-native')
+import React from 'react';
 let RNFS = require('react-native-fs')
 let asyncFunc = require('async')
 let ReactNativeVoodoo360fsView = require('./ReactNativeVoodoo360fsView')
