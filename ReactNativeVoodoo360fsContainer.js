@@ -67,19 +67,15 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
 
     RNFS.exists(filepath).then(result => {
       if (result){
-        console.log("file exist, skip file")
         successFunc()
       } else {
-        console.log("file not exist, download file")
-        RNFS.downloadFile(this.props.imageURIs[index], filepath, 
-          (res) => {
-            console.log("begin", res)
-          }, (res) => {
-            console.log("process", res)
-          }).then(res => {
-            successFunc()
+        RNFS.downloadFile({
+          fromUrl: this.props.imageURIs[index],
+          toFile: filepath
+        }).then(res => {
+          successFunc()
         }).catch((err) => {
-          console.log("err", err)
+          console.warn("RNFS.downloadFile fails: ", err)
           this.setState({errMsg: "Something wrong."})
         });
       }
@@ -91,7 +87,6 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
       // create base folder
       (cb) => {
         RNFS.mkdir(this.getBaseFolderName()).then(result => {
-          console.log("Create Base Folder", result[0])
           if (result[0]){
             cb(null)
           } else {
@@ -112,7 +107,6 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
           cb(null, null)
         } else {
           RNFS.readDir(this.getBaseFolderName()).then(result => {
-            console.log("readDir", result)
             if (result.length >=3){
             // if (true){ // debug
               cb(null, result[0].path)
@@ -126,7 +120,6 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
       (path, cb) => {
         if (path){
           RNFS.unlink(path).then(result => {
-            console.log("Delete folder", result)
             cb(null)
           })
         } else {
@@ -136,7 +129,6 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
       // create folder
       (cb) => {
         RNFS.mkdir(this.getFolderName()).then(result => {
-          console.log("Create folder", result)
           if (result[0]){
             cb(null)
           } else {
@@ -147,7 +139,6 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
       // check images exist
       (cb) => {
         RNFS.readDir(this.getFolderName()).then(result => {
-          console.log("files", result)
           if (result.length == 36){
             let images = result.map((file) => {
               return file.path
@@ -161,9 +152,8 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
       },
     ], (err, result) => {
       if (err){
-        console.log("Init images fail", err)
+        console.warn("[ReactNativeVoodoo360fsContainer] Init images fail", err)
       } else {
-        console.log("Done", result)
         // download files
         if(result){
           this.setState({action: 'Download'})
