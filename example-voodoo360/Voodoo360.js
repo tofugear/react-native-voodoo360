@@ -5,7 +5,7 @@ var {
   Dimensions,
   Image,
   PanResponder,
-  ProgressBarAndroid,
+  ActivityIndicator,
   ScrollView,
   StyleSheet,
   Text,
