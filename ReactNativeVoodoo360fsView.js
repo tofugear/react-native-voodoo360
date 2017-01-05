@@ -6,7 +6,7 @@ import {
   Text,
   View,
   Dimensions,
-  ProgressBarAndroid,
+  ActivityIndicator,
   TouchableOpacity
 } from 'react-native';
 
@@ -38,7 +38,7 @@ let ReactNativeVoodoo360fsView = React.createClass({
       overlay = 
         <View style={styles.progressContainer}>
           <View style={styles.progressWrapper}>
-            <ProgressBarAndroid />
+            <ActivityIndicator size='large' />
             {loadingCountView}
             {errMsgView}
           </View>
