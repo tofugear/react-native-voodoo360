@@ -1,14 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   requireNativeComponent,
-  View
+  View,
+  ViewProps,
 } from 'react-native';
 
 export default class Voodoo360 extends React.Component {
   static propTypes = {
-    ...View.propTypes,
-    sources: React.PropTypes.arrayOf(React.PropTypes.string),
-    // source: React.PropTypes.string,
+    ...ViewPropTypes,
+    sources: PropTypes.arrayOf(PropTypes.string),
+    // source: PropTypes.string,
   };
 
   constructor(props) {
