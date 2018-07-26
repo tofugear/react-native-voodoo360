@@ -5,9 +5,10 @@ let RNFS = require('react-native-fs')
 let asyncFunc = require('async')
 let ReactNativeVoodoo360fsView = require('./ReactNativeVoodoo360fsView')
 
-let ReactNativeVoodoo360fsContainer = React.createClass({
-  getInitialState(){
-    return {
+let ReactNativeVoodoo360fsContainer = React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
       index: 0,
       images: [],
       allLoaded: false,
@@ -15,37 +16,37 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
       action: null,
       voodoo360Index: 0
     }
-  },
+  }
 
   getBaseFolderName(){
     return `${RNFS.DocumentDirectoryPath}/voodoo_360`
-  },
+  }
 
   getFolderName(){
     return `${this.getBaseFolderName()}/${this.props.folderName}`
-  },
+  }
 
   getFilename(index){
     return `${this.getFolderName()}/${index}.jpg`
-  },
+  }
 
   imagesLoaded(){
     this.setState({allLoaded: true})
     if (this.props.onImagesLoaded){
       this.props.onImagesLoaded()
     }
-  },
+  }
 
   handleRetryDownloadFiles(){
     this.setState({errMsg: null})
     this.startDownloadFiles(this.state.index)
-  },
+  }
 
   startDownloadFiles(index){
     this.downloadFiles(index, () => {
         this.imagesLoaded()
     })
-  },
+  }
 
   downloadFiles(index, cb){
     if (!this.isMounted()){
@@ -80,7 +81,7 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
         });
       }
     })
-  },
+  }
 
   componentDidMount(){
     asyncFunc.waterfall([
@@ -163,14 +164,14 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
         }
       }
     })
-  },
+  }
 
   handleVoodoo360IndexChange(index){
     this.setState({voodoo360Index: index})
     if (this.props.onVoodoo360IndexChange){
       this.props.onVoodoo360IndexChange(index)
     }
-  },
+  }
 
   render(){
     return (
@@ -185,6 +186,6 @@ let ReactNativeVoodoo360fsContainer = React.createClass({
         />
     )
   }
-})
+}
 
 module.exports = ReactNativeVoodoo360fsContainer

@@ -61,17 +61,18 @@ const styles = StyleSheet.create({
 	}
 })
 
-let app = React.createClass({
-	getInitialState(){
-		return {
+let app = React.Component {
+	constructor(props){
+		super(props)
+		this.state = {
 			show: true
 		}
-	},
+	}
 
 	handleStopDownload(){
 		console.log("handleStopDownload")
 		this.setState({show: false})
-	},
+	}
 
 	render(){
 		let voodoo360View
@@ -93,6 +94,6 @@ let app = React.createClass({
 			</View>
 		)
 	}
-})
+}
 
 AppRegistry.registerComponent('voodoo360fs', () => app)

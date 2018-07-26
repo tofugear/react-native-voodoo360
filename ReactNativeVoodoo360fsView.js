@@ -12,7 +12,7 @@ import {
 
 import Voodoo360 from './ReactNativeVoodoo360'
 
-let ReactNativeVoodoo360fsView = React.createClass({
+let ReactNativeVoodoo360fsView = React.Component {
   render() {
     let overlay
     let errMsgView
@@ -57,7 +57,7 @@ let ReactNativeVoodoo360fsView = React.createClass({
       </View>
     );
   }
-})
+};
 
 let SCREEN_HEIGHT = Dimensions.get('window').height
 let SCREEN_WIDTH = Dimensions.get('window').width

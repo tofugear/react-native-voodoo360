@@ -1,5 +1,4 @@
 var React = require('react-native');
-var TimerMixin = require('react-timer-mixin');
 
 var {
   Dimensions,
@@ -101,21 +100,21 @@ var styles = StyleSheet.create({
   // }
 });
 
-var Voodoo360 = React.createClass({
-  mixins: [TimerMixin],
-  touchX: null,
-  k: 1, // distance panned
-  elasticTimer: null,
-  timer: null,
+var Voodoo360 = React.Component {
+  touchX: null
+  k: 1 // distance panned
+  elasticTimer: null
+  timer: null
 
-  getInitialState() {
-    return {
+  constructor(props) {
+    super(props)
+    this.state = {
       index: 0,
       imagesLoaded: [],
       mode: '360',
       ready: false,
     };
-  },
+  }
 
   componentDidMount() {
     // let $container = $(this.refs.container.getDOMNode());
@@ -186,7 +185,7 @@ var Voodoo360 = React.createClass({
     // this.setState({
     //   ready: true
     // });
-  },
+  }
 
   componentWillMount() {
     this._panResponder = PanResponder.create({
@@ -200,41 +199,41 @@ var Voodoo360 = React.createClass({
       // onStartShouldSetPanResponderCapture: (evt) => true,
       // onMoveShouldSetPanResponderCapture: (evt) => true,
     });
-  },
+  }
 
   _preloader() {
-    this.timer = this.setTimeout( () => {
+    this.timer = setTimeout( () => {
       if (this.state.index < this.props.images.length-1) {
         this.setState({
           index: this.state.index+1
         })
         this._preloader();
       } else {
-        this.clearTimeout(this.timer);
+        clearTimeout(this.timer);
         this.setState({
           index: 0,
           ready: true
         });
       }
     }, 500);
-  },
+  }
 
   // Ask to be the responder:
   _handleStartShouldSetPanResponder(evt, gestureState) {
     return true;
-  },
+  }
 
   _handleMoveShouldSetPanResponder(evt, gestureState) {
     return true;
-  },
+  }
 
   _handleResponderTerminationRequest(evt, gestureState) {
     return true;
-  },
+  }
 
   _handlePanResponderGrant(evt, gestureState) {
     this.clearInterval(this.elasticTimer);
-  },
+  }
 
   _handlePanResponderMove(evt, gestureState) {
     let x = gestureState.moveX;
@@ -249,7 +248,7 @@ var Voodoo360 = React.createClass({
       this.step(-1 * vx);
       // this.touchX = x;
     }
-  },
+  }
 
   _handlePanResponderEnd(evt, gestureState) {
     // console.log('velocity', gestureState.vx);
@@ -268,7 +267,7 @@ var Voodoo360 = React.createClass({
     }, 25);
     // this.step(gestureState.vx)
     // this.touchX = null;
-  },
+  }
 
   step(step) {
     let index = this._getNextStep(step);
@@ -278,18 +277,18 @@ var Voodoo360 = React.createClass({
     // this.refs.voodooImage.setNativeProps({
     //   source: { uri: this.props.images[index]}
     // });
-  },
+  }
 
   zoom() {
     let newMode = this.state.mode === 'zoom' ? '360' : 'zoom';
     this.setState({
       mode: newMode
     });
-  },
+  }
 
   close() {
     this.props.close();
-  },
+  }
 
   animate() {
     let x = event.touches[0].clientX;
@@ -297,7 +296,7 @@ var Voodoo360 = React.createClass({
       this.step(this.touchX > x ? 1 : -1);
       this.touchX = x;
     }
-  },
+  }
 
   _getNextStep(step) {
     let currentStep = this.state.index;
@@ -307,11 +306,11 @@ var Voodoo360 = React.createClass({
       : (currentStep > 0 ? currentStep + step : (total-1) + step) // decrement
     ;
     return nextStep;
-  },
+  }
 
   _getNextImage(step) {
     return this.props.images[this._getNextStep(step)];
-  },
+  }
 
   // returns a string of multiple background images
   _generateCssBackgroundImageUrls(images) {
@@ -319,12 +318,12 @@ var Voodoo360 = React.createClass({
     let activeImage = images[this.state.index];
     str = `url("${activeImage}")`;
     return str;
-  },
+  }
 
   _generateCssBackgroundImageProp(images) {
     let value = this._generateCssBackgroundImageUrls(images);
     return value ? { backgroundImage: value } : {};
-  },
+  }
 
   // _onImageLoad() {
   //   console.log('_onImageLoad', arguments);
@@ -342,7 +341,7 @@ var Voodoo360 = React.createClass({
       Object.assign(state, {ready: true});
     }
     this.setState(state);
-  },
+  }
 
   render() {
     // let voodoo360VisibleStyle = {opacity: (this.state.ready ? 1 : 0)};
@@ -396,7 +395,7 @@ var Voodoo360 = React.createClass({
       </View>
     );
   }
-});
+};
 
 class NetworkImage extends React.Component {
 
