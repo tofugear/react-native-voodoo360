@@ -11,7 +11,7 @@ export default class Voodoo360 extends React.Component {
     ...ViewPropTypes,
     sources: PropTypes.arrayOf(PropTypes.string),
     // source: PropTypes.string,
-  };
+  }
 
   constructor(props) {
     super(props);
