@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
 	}
 })
 
-let app = React.Component {
+class app extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {

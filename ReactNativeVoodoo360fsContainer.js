@@ -5,7 +5,7 @@ let RNFS = require('react-native-fs')
 let asyncFunc = require('async')
 let ReactNativeVoodoo360fsView = require('./ReactNativeVoodoo360fsView')
 
-let ReactNativeVoodoo360fsContainer = React.Component {
+class ReactNativeVoodoo360fsContainer extends React.Component {
   constructor(props){
     super(props)
     this.state = {

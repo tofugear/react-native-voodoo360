@@ -12,7 +12,7 @@ import {
 
 import Voodoo360 from './ReactNativeVoodoo360'
 
-let ReactNativeVoodoo360fsView = React.Component {
+class ReactNativeVoodoo360fsView extends React.Component {
   render() {
     let overlay
     let errMsgView

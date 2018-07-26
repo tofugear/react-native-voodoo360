@@ -100,7 +100,7 @@ var styles = StyleSheet.create({
   // }
 });
 
-var Voodoo360 = React.Component {
+class Voodoo360 extends React.Component {
   touchX: null
   k: 1 // distance panned
   elasticTimer: null
