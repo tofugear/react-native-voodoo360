@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   requireNativeComponent,
   View,
-  ViewProps,
+  ViewPropTypes,
 } from 'react-native';
 
 export default class Voodoo360 extends React.Component {
